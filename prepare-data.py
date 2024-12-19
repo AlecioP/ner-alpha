@@ -7,7 +7,7 @@
 # v2 -> Argparse
 from argparse import ArgumentParser
 
-parser = ArgumentParser(description='Inference of Thesaurus relations from KG')
+parser = ArgumentParser(description="Generate a dataset to train Spacy's NER component from escriptorium data")
 parser.add_argument("--annotations",type=str,help="Path to Annotations JSON",nargs=1,required=True)
 parser.add_argument("--transcriptions",type=str,help="Path to Transcriptions JSON",nargs=1,required=True)
 parser.add_argument("--ontology",type=str,help="Path to Ontology JSON",nargs=1,required=True)
